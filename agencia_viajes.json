@@ -1,0 +1,117 @@
+{
+  "paquetes_viaje": [
+    {
+      "id": 1,
+      "destino": {"ciudad": "París", "país": "Francia"},
+      "duración": "7 días, 6 noches",
+      "precio": 1500,
+      "moneda": "USD",
+      "fechas_salida": ["2025-06-15", "2025-07-10", "2025-08-05"],
+      "incluye": ["Vuelo ida y vuelta", "Alojamiento en hotel 4 estrellas", "Desayuno incluido", "Tours guiados", "Traslados aeropuerto-hotel", "Seguro de viaje", "Asistencia en español"],
+      "no_incluye": ["Almuerzos y cenas", "Entradas a museos", "Gastos personales", "Tasas turísticas"],
+      "valoración": 3.9,
+      "opiniones": [
+        {"nombre": "Carlos López", "comentario": "Un viaje increíble, todo muy bien organizado.", "puntuación": 5},
+        {"nombre": "Ana Martínez", "comentario": "El hotel fue excelente, aunque los tours podrían mejorar.", "puntuación": 4},
+        {"nombre": "Luis Navarro", "comentario": "El vuelo tuvo varios retrasos y la comunicación no fue la mejor.", "puntuación": 2}
+      ],
+      "descuentos": {"porcentaje": 10, "fecha_límite": "2025-05-01"}
+    },
+    {
+      "id": 2,
+      "destino": {"ciudad": "Cancún", "país": "México"},
+      "duración": "5 días, 4 noches",
+      "precio": 2100,
+      "moneda": "USD",
+      "fechas_salida": ["2025-05-20", "2025-06-18", "2025-07-25"],
+      "incluye": ["Vuelo ida y vuelta", "Resort todo incluido", "Actividades acuáticas", "Excursión a Chichén Itzá", "Seguro de viaje"],
+      "no_incluye": ["Gastos personales", "Propinas", "Excursiones adicionales"],
+      "valoración": 4.0,
+      "opiniones": [
+        {"nombre": "Pedro Gómez", "comentario": "Un lugar paradisíaco, excelente servicio.", "puntuación": 5},
+        {"nombre": "Marta Reyes", "comentario": "El hotel no estaba tan cerca de la playa como prometieron.", "puntuación": 3}
+      ],
+      "descuentos": {"porcentaje": 15, "fecha_límite": "2025-04-15"}
+    },
+    {
+      "id": 3,
+      "destino": {"ciudad": "Roma", "país": "Italia"},
+      "duración": "6 días, 5 noches",
+      "precio": 1700,
+      "moneda": "USD",
+      "fechas_salida": ["2025-04-15", "2025-05-10", "2025-06-20"],
+      "incluye": ["Vuelo ida y vuelta", "Alojamiento en hotel 4 estrellas", "Desayuno incluido", "Tour por el Coliseo", "Traslados aeropuerto-hotel"],
+      "no_incluye": ["Comidas no especificadas", "Entradas a museos", "Gastos personales"],
+      "valoración": 4.6,
+      "opiniones": [
+        {"nombre": "Miguel Torres", "comentario": "El Coliseo es impresionante, gran experiencia.", "puntuación": 5},
+        {"nombre": "Paula Méndez", "comentario": "Los tours estaban mal organizados y hubo mucha espera.", "puntuación": 2}
+      ],
+      "descuentos": {"porcentaje": 5, "fecha_límite": "2025-04-01"}
+    },
+    {
+      "id": 4,
+      "destino": {"ciudad": "Tokio", "país": "Japón"},
+      "duración": "10 días, 9 noches",
+      "precio": 2800,
+      "moneda": "USD",
+      "fechas_salida": ["2025-09-12", "2025-10-05", "2025-11-20"],
+      "incluye": ["Vuelo ida y vuelta", "Alojamiento en hotel 5 estrellas", "Desayuno buffet", "Guía bilingüe", "Japan Rail Pass"],
+      "no_incluye": ["Comidas no especificadas", "Entradas a atracciones", "Seguro de viaje"],
+      "valoración": 4.9,
+      "opiniones": [
+        {"nombre": "Laura Sánchez", "comentario": "Japón es fascinante, y el paquete lo hizo todo más fácil.", "puntuación": 5},
+        {"nombre": "Diego Herrera", "comentario": "El hotel no estaba a la altura de un 5 estrellas.", "puntuación": 3}
+      ],
+      "descuentos": {"porcentaje": 8, "fecha_límite": "2025-08-01"}
+    }
+  ],
+  "información_agencia": {
+    "nombre": "Viajes Globales",
+    "contacto": {
+      "teléfono": "+1-800-123-4567",
+      "correo_electrónico": "info@viajesglobales.com"
+    },
+    "ubicación": "Avenida Principal 123, Ciudad, País",
+    "horario_atención": {
+      "lunes_a_viernes": "9:00 - 18:00",
+      "sábado": "10:00 - 14:00",
+      "domingo": "Cerrado"
+    },
+    "servicios_adicionales": ["Asesoría de visado", "Cambio de divisas", "Seguro de viaje", "Alquiler de vehículos", "Planes personalizados", "Asistencia 24/7"]
+  },
+  "clientes_con_reserva": [
+    {
+      "nombre": "María González",
+      "paquete_reservado": "París, Francia",
+      "fecha_salida": "2025-07-10",
+      "número_personas": 2,
+      "estado_reserva": "Confirmada",
+      "detalles_pago": {"monto_total": 3000, "anticipo": 1500, "saldo_pendiente": 1500}
+    },
+    {
+      "nombre": "Javier Pérez",
+      "paquete_reservado": "Tokio, Japón",
+      "fecha_salida": "2025-10-05",
+      "número_personas": 1,
+      "estado_reserva": "Pendiente de pago",
+      "detalles_pago": {"monto_total": 2800, "anticipo": 0, "saldo_pendiente": 2800}
+    },
+    {
+      "nombre": "Sofía Ramírez",
+      "paquete_reservado": "Roma, Italia",
+      "fecha_salida": "2025-06-20",
+      "número_personas": 2,
+      "estado_reserva": "Confirmada",
+      "detalles_pago": {"monto_total": 3400, "anticipo": 1700, "saldo_pendiente": 1700}
+    },
+    {
+      "nombre": "Luis Fernández",
+      "paquete_reservado": "Cancún, México",
+      "fecha_salida": "2025-07-25",
+      "número_personas": 4,
+      "estado_reserva": "Pendiente de pago",
+      "detalles_pago": {"monto_total": 4800, "anticipo": 0, "saldo_pendiente": 4800}
+    }
+  ]
+}
