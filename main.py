@@ -1,3 +1,3 @@
 from funciones import *
 
-listar_paquetes()
+opiniones_puntuacion()
