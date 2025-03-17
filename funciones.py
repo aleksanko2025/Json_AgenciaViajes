@@ -27,3 +27,24 @@ def opiniones_puntuacion():
         comentario = elemento["comentario"]
         puntuacion = elemento["puntuación"]
         print(f"Nombre: {nombre}, Comentario: {comentario} Puntuación: {puntuacion}")
+
+def buscar_valoraciones():
+    valoraciones = []
+    bandera = False
+    while bandera == False:
+        quest = input("Indique destino Ciudad/País (Para saber los destinos indique 1): ")
+        for paquete in datos["paquetes_viaje"]:
+            if quest == "1":                     #Para consultar destinos
+                ciudad = paquete["destino"]["ciudad"]
+                pais = paquete["destino"]["país"]
+                print(f"Ciudad: {ciudad} País: {pais}")
+            elif paquete["destino"]["ciudad"] == quest or paquete["destino"]["país"] == quest:
+                for comentario in paquete["opiniones"]:
+                    valoraciones.append(comentario)
+                    bandera = True
+        print("Destino u opción no válida")
+    for elemento in valoraciones:                #Reciclamos el código de la función anterior
+        nombre = elemento["nombre"]
+        comentario = elemento["comentario"]
+        puntuacion = elemento["puntuación"]
+        print(f"Nombre: {nombre}, Comentario: {comentario} Puntuación: {puntuacion}")
