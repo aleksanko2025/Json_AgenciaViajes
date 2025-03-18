@@ -42,9 +42,23 @@ def buscar_valoraciones():
                 for comentario in paquete["opiniones"]:
                     valoraciones.append(comentario)
                     bandera = True
-        print("Destino u opción no válida")
     for elemento in valoraciones:                #Reciclamos el código de la función anterior
         nombre = elemento["nombre"]
         comentario = elemento["comentario"]
         puntuacion = elemento["puntuación"]
         print(f"Nombre: {nombre}, Comentario: {comentario} Puntuación: {puntuacion}")
+
+def presupuesto_destino():
+    destino = []
+    presupuesto = int(input("Indique su presupuesto para viajar: "))
+    for paquete in datos["paquetes_viaje"]:
+        if paquete["precio"] <= presupuesto:
+            destino.append(paquete["destino"])
+    if len(destino) > 0:
+        print("Opciones que se ajustan a su presupuesto: ")
+        for elemento in destino:
+            ciudad = elemento["ciudad"]
+            pais = elemento["país"]
+            print(f"{ciudad}, {pais}")
+    else:
+        print("No hay ningún destino que se ajuste a su presupuesto.")
