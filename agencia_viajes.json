@@ -114,14 +114,6 @@
       "detalles_pago": {"monto_total": 4800, "anticipo": 0, "saldo_pendiente": 4800}
     },
     {
-      "nombre": "Ana Martínez",
-      "paquete_reservado": "París, Francia",
-      "fecha_salida": "2025-08-05",
-      "número_personas": 1,
-      "estado_reserva": "Confirmada",
-      "detalles_pago": {"monto_total": 1500, "anticipo": 1500, "saldo_pendiente": 0}
-    },
-    {
       "nombre": "Carlos López",
       "paquete_reservado": "Roma, Italia",
       "fecha_salida": "2025-06-20",
@@ -152,14 +144,6 @@
       "número_personas": 2,
       "estado_reserva": "Pendiente de pago",
       "detalles_pago": {"monto_total": 4200, "anticipo": 0, "saldo_pendiente": 4200}
-    },
-    {
-      "nombre": "Pedro Gómez",
-      "paquete_reservado": "París, Francia",
-      "fecha_salida": "2025-06-15",
-      "número_personas": 1,
-      "estado_reserva": "Confirmada",
-      "detalles_pago": {"monto_total": 1500, "anticipo": 750, "saldo_pendiente": 750}
     }
   ]
 }
