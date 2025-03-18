@@ -4,6 +4,7 @@ with open("agencia_viajes.json") as fichero: #Abrimos el fichero json
 
 def listar_paquetes():
     contador = 0
+    print("Podemos ofrecer los siguientes viajes: ")
     for paquete in datos["paquetes_viaje"]:
         contador += 1
         ciudad = paquete["destino"]["ciudad"]
@@ -42,7 +43,7 @@ def buscar_valoraciones():
                 for comentario in paquete["opiniones"]:
                     valoraciones.append(comentario)
                     bandera = True
-    for elemento in valoraciones:                #Reciclamos el código de la función anterior
+    for elemento in valoraciones:                #Reciclamos el código de la función anterior.
         nombre = elemento["nombre"]
         comentario = elemento["comentario"]
         puntuacion = elemento["puntuación"]
@@ -54,11 +55,11 @@ def presupuesto_destino():
     for paquete in datos["paquetes_viaje"]:
         if paquete["precio"] <= presupuesto:
             destino.append(paquete["destino"])
-    if len(destino) > 0:
+    if len(destino) > 0:   #En el caso de que la lista no esté vacía se muestran los resultados, en caso contrario se muestra un mensaje.
         print("Opciones que se ajustan a su presupuesto: ")
         for elemento in destino:
             ciudad = elemento["ciudad"]
             pais = elemento["país"]
             print(f"{ciudad}, {pais}")
-    else:
+    else:               
         print("No hay ningún destino que se ajuste a su presupuesto.")

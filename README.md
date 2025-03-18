@@ -8,4 +8,4 @@ Enunciados Agencia de Viajes:
  
 4. Buscar destino según la cantidad de dinero dispuesta a gastar. 
  
-5. Buscar clientes con reservas pendientes de pago y mostrar su saldo pendiente. (cambiar)
+5. Consultar el destino más reservado y el número total de personas que van al viaje.

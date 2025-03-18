@@ -1,3 +1,3 @@
 from funciones import *
 
-buscar_valoraciones()
+opiniones_puntuacion()
