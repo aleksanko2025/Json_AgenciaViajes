@@ -1,3 +1,3 @@
 from funciones import *
 
-destino_top()
+menu()

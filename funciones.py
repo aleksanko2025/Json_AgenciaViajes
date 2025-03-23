@@ -3,7 +3,14 @@ with open("agencia_viajes.json") as fichero: #Abrimos el fichero json
     datos = json.load(fichero)
 
 def menu():
-    print("""""")
+    print("""
+    Menú Agencia Viajes:    
+        1. Lista paquetes de viaje y duración
+        2. Opiniones negativas (puntación por debajo del 4)
+        3. Opiniones sobre destino
+        4. Buscar destino según su presupuesto
+        5. Destino más reservado y viajeros desplazados
+""")
 
 def listar_paquetes():
     contador = 0
