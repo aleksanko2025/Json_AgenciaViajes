@@ -10,6 +10,7 @@ def menu():
         3. Opiniones sobre destino
         4. Buscar destino según su presupuesto
         5. Destino más reservado y viajeros desplazados
+        6. Salir
 """)
 
 def listar_paquetes():
