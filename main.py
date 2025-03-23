@@ -1,3 +1,3 @@
 from funciones import *
 
-opiniones_puntuacion()
+destino_top()
